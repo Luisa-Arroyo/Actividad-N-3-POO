@@ -3,7 +3,7 @@
 ### Hecho por:
 |Nombre completo                       |Correo institucional      |
 |--------------------------------------|--------------------------|
-|Luisa Ruth Arroyo Villera             |laarroyov@unal.edu.co     |
+|Luisa Ruth Arroyo Villera             |larroyov@unal.edu.co      |
 
 ### Docente:
 Walter Hugo Arboleda Mazo
