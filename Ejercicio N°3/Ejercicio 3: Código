@@ -1,0 +1,139 @@
+# Sistema TiendaMascotas
+
+class Mascota:
+    def __init__(self, nombre, edad, color):
+        self.nombre = nombre
+        self.edad = edad
+        self.color = color
+
+    def imprimir_info(self):
+        print(f"Nombre: {self.nombre}")
+        print(f"Edad: {self.edad}")
+        print(f"Color: {self.color}")
+
+
+# -------------------------------
+# Clase base para perros
+# -------------------------------
+class Perro(Mascota):
+    def __init__(self, nombre, edad, color, peso, muerde):
+        super().__init__(nombre, edad, color)
+        self.peso = peso
+        self.muerde = muerde
+
+    @staticmethod
+    def sonido():
+        print("Los perros ladran")
+
+    def imprimir_info(self):
+        super().imprimir_info()
+        print(f"Peso: {self.peso} kg")
+        print(f"Muerde: {self.muerde}")
+
+
+# Subcategorías de Perro
+class PerroPequeno(Perro):
+    def __init__(self, nombre, edad, color, peso, muerde, raza):
+        super().__init__(nombre, edad, color, peso, muerde)
+        self.raza = raza
+
+    def imprimir_info(self):
+        super().imprimir_info()
+        print(f"Raza (pequeño): {self.raza}\n")
+
+
+class PerroMediano(Perro):
+    def __init__(self, nombre, edad, color, peso, muerde, raza):
+        super().__init__(nombre, edad, color, peso, muerde)
+        self.raza = raza
+
+    def imprimir_info(self):
+        super().imprimir_info()
+        print(f"Raza (mediano): {self.raza}\n")
+
+
+class PerroGrande(Perro):
+    def __init__(self, nombre, edad, color, peso, muerde, raza):
+        super().__init__(nombre, edad, color, peso, muerde)
+        self.raza = raza
+
+    def imprimir_info(self):
+        super().imprimir_info()
+        print(f"Raza (grande): {self.raza}\n")
+
+
+# -------------------------------
+# Clase base para gatos
+# -------------------------------
+class Gato(Mascota):
+    def __init__(self, nombre, edad, color, altura_salto, longitud_salto):
+        super().__init__(nombre, edad, color)
+        self.altura_salto = altura_salto
+        self.longitud_salto = longitud_salto
+
+    @staticmethod
+    def sonido():
+        print("Los gatos maúllan y ronronean")
+
+    def imprimir_info(self):
+        super().imprimir_info()
+        print(f"Altura de salto: {self.altura_salto} cm")
+        print(f"Longitud de salto: {self.longitud_salto} cm")
+
+
+# Subcategorías de Gato
+class GatoSinPelo(Gato):
+    def __init__(self, nombre, edad, color, altura_salto, longitud_salto, raza):
+        super().__init__(nombre, edad, color, altura_salto, longitud_salto)
+        self.raza = raza
+
+    def imprimir_info(self):
+        super().imprimir_info()
+        print(f"Raza (sin pelo): {self.raza}\n")
+
+
+class GatoPeloLargo(Gato):
+    def __init__(self, nombre, edad, color, altura_salto, longitud_salto, raza):
+        super().__init__(nombre, edad, color, altura_salto, longitud_salto)
+        self.raza = raza
+
+    def imprimir_info(self):
+        super().imprimir_info()
+        print(f"Raza (pelo largo): {self.raza}\n")
+
+
+class GatoPeloCorto(Gato):
+    def __init__(self, nombre, edad, color, altura_salto, longitud_salto, raza):
+        super().__init__(nombre, edad, color, altura_salto, longitud_salto)
+        self.raza = raza
+
+    def imprimir_info(self):
+        super().imprimir_info()
+        print(f"Raza (pelo corto): {self.raza}\n")
+
+
+# --------------------------------------
+# Prueba de ejemplo
+# --------------------------------------
+def main():
+    print("🐶 Ejemplo Perro Grande:")
+    Perro.sonido()
+    perro1 = PerroGrande("Max", 4, "Marrón", 30.5, True, "rottweiler")
+    perro1.imprimir_info()
+
+    print("🐶 Ejemplo Perro Pequeño:")
+    perro2 = PerroPequeno("Luna", 2, "Blanco", 5.2, False, "caniche")
+    perro2.imprimir_info()
+
+    print("🐱 Ejemplo Gato Pelo Largo:")
+    Gato.sonido()
+    gato1 = GatoPeloLargo("Nube", 3, "Gris", 70.0, 150.0, "himalayo")
+    gato1.imprimir_info()
+
+    print("🐱 Ejemplo Gato Sin Pelo:")
+    gato2 = GatoSinPelo("Esme", 5, "Rosado", 60.0, 140.0, "esfinge")
+    gato2.imprimir_info()
+
+
+if __name__ == "__main__":
+    main()
