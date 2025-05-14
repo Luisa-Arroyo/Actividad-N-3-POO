@@ -18,7 +18,7 @@ Entrega: realizar en Java o Python los ejercicios y entregar un archivo PDF con 
 El lenguaje de programación que estaré utilizando es Python, en lo personal se me hace mas facil, ya que lo he utilizado un poco.
 Aclaró que la plataforma que utilizo para programar en Python es Replit (https://replit.com/@replit/Python#main.py) 
 
-Ejercicios en GitHub: https:
+Ejercicios en GitHub: https: https://github.com/Luisa-Arroyo/Actividad-N-3-POO.git
 
 Adicionalmente también, anexe los códigos en Google Colab: https://colab.research.google.com/drive/1iWSA-riUbNqZgAJWubtXnaDDrr53ZW4o?usp=sharing
 ##
