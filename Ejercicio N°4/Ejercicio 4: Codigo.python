@@ -1,0 +1,79 @@
+# Sistema Universidad
+
+class Persona:
+    def __init__(self, nombre, direccion):
+        self.nombre = nombre
+        self.direccion = direccion
+
+    def getNombre(self):
+        return self.nombre
+
+    def getDireccion(self):
+        return self.direccion
+
+    def setNombre(self, nombre):
+        self.nombre = nombre
+
+    def setDireccion(self, direccion):
+        self.direccion = direccion
+
+
+class Estudiante(Persona):
+    def __init__(self, nombre, direccion, carrera, semestre):
+        super().__init__(nombre, direccion)
+        self.carrera = carrera
+        self.semestre = semestre
+
+    def getCarrera(self):
+        return self.carrera
+
+    def getSemestre(self):
+        return self.semestre
+
+    def setCarrera(self, carrera):
+        self.carrera = carrera
+
+    def setSemestre(self, semestre):
+        self.semestre = semestre
+
+
+class Profesor(Persona):
+    def __init__(self, nombre, direccion, departamento, categoria):
+        super().__init__(nombre, direccion)
+        self.departamento = departamento
+        self.categoria = categoria
+
+    def getDepartamento(self):
+        return self.departamento
+
+    def getCategoria(self):
+        return self.categoria
+
+    def setDepartamento(self, departamento):
+        self.departamento = departamento
+
+    def setCategoria(self, categoria):
+        self.categoria = categoria
+
+
+# ----------------------
+# Ejemplo de uso
+# ----------------------
+def main():
+    est = Estudiante("Laura", "Calle 45 #12-34", "Ingeniería", 5)
+    print("👩‍🎓 Estudiante:")
+    print(f"Nombre: {est.getNombre()}")
+    print(f"Dirección: {est.getDireccion()}")
+    print(f"Carrera: {est.getCarrera()}")
+    print(f"Semestre: {est.getSemestre()}")
+
+    print("\n👨‍🏫 Profesor:")
+    prof = Profesor("Carlos", "Cra 10 #20-30", "Matemáticas", "Titular")
+    print(f"Nombre: {prof.getNombre()}")
+    print(f"Dirección: {prof.getDireccion()}")
+    print(f"Departamento: {prof.getDepartamento()}")
+    print(f"Categoría: {prof.getCategoria()}")
+
+
+if __name__ == "__main__":
+    main()
