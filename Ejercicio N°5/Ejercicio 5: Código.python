@@ -1,0 +1,12 @@
+class Profesor:
+    def imprimir(self):
+        print("Es un profesor.")
+
+class ProfesorTitular(Profesor):
+    def imprimir(self):
+        print("Es un profesor titular.")
+
+# Clase Prueba (equivalente en Python: script principal)
+if __name__ == "__main__":
+    profesor1 = ProfesorTitular()  # Crear un ProfesorTitular, pero referenciado como Profesor
+    profesor1.imprimir()
