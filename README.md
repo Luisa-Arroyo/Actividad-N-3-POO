@@ -1,6 +1,6 @@
 # Actividad 3 - Programación Orientada a Objetos (POO)
 
-### Integrante:
+### Hecho por:
 |Nombre completo                       |Correo institucional      |
 |--------------------------------------|--------------------------|
 |Luisa Ruth Arroyo Villera             |laarroyov@unal.edu.co     |
