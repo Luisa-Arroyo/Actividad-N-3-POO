@@ -1,5 +1,3 @@
-```
-
 class Cuenta:
     def __init__(self, saldo, tasa_anual):
         self._saldo = saldo
@@ -124,5 +122,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-```
