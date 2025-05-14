@@ -20,6 +20,6 @@ Aclaró que la plataforma que utilizo para programar en Python es Replit (https:
 
 Ejercicios en GitHub: https:
 
-Adicionalmente también, anexe los códigos en Google Colab: 
+Adicionalmente también, anexe los códigos en Google Colab: https://colab.research.google.com/drive/1iWSA-riUbNqZgAJWubtXnaDDrr53ZW4o?usp=sharing
 ##
 ## Gracias
